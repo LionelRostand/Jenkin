@@ -9,7 +9,7 @@ pipeline {
             }
 
         }
-        stage('DELTE') {
+        stage('SUPPRESSION') {
             steps {
                 sh 'ssh -oStrictHostKeyChecking=no root@192.168.1.11   rmdir /applis'
                
