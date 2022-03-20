@@ -9,6 +9,13 @@ pipeline {
             }
 
         }
+        stage('DELTE') {
+            steps {
+                sh 'ssh -oStrictHostKeyChecking=no root@192.168.1.19    rmdir /applis'
+               
+            }
+
+        }
        
     }
     
